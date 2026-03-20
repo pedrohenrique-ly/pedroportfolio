@@ -1,0 +1,268 @@
+body {
+    font-family: Montserrat, sans-serif;
+    background: linear-gradient(235deg, #46526e, #5b6f9e, #1c2e55);
+    background-size: 300% 300%;
+    animation: fundo 10s ease infinite;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background: transparent;
+    font-size: 40px;
+    font-style: italic;
+    padding: 16px;
+    color: #5DADE2;
+
+}
+
+nav {
+    background: transparent;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: #5DADE2;
+    padding-top: 16px;
+    font-size: 20px;
+}
+
+.corpo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.texto-principal {
+    text-align: center;
+
+}
+
+main {
+    flex: 1;
+}
+
+main h1 {
+    font-size: 75px;
+    padding-left: 20vh;
+    padding-top: 10vh;
+    font-weight: 500;
+    color: #E8ECF1;
+    text-shadow:
+        0 0 8px rgba(93, 173, 226, 0.5),
+        0 0 16px rgba(93, 173, 226, 0.3)
+}
+
+main h2 {
+    font-size: 45px;
+    padding-left: 17vh;
+    font-weight: 600;
+    animation: brilho 1.6s ease-in-out infinite alternate;
+    color: #dbe0e9;
+}
+
+main img {
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+    max-width: 450px;
+    border: 2px solid #4a556d;
+}
+
+.img-principal {
+    text-align: left;
+    padding-top: 10%;
+}
+
+.navbar a {
+    transition: 0.8s;
+}
+
+.navbar a:hover,
+.navbar a.principal {
+    color: #1346b6;
+}
+
+@keyframes brilho {
+    from {
+        text-shadow:
+            0 0 10px rgba(100, 200, 255, 0.7),
+            0 0 20px rgba(150, 220, 255, 0.6),
+            0 0 35px rgba(180, 235, 255, 0.5);
+    }
+
+    to {
+        text-shadow:
+            0 0 15px rgba(120, 200, 255, 0.95),
+            0 0 30px rgba(150, 220, 255, 0.85),
+            0 0 50px rgba(200, 240, 255, 0.7);
+    }
+
+}
+
+@keyframes fundo {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.sobre-mim h1 {
+    color: #E8ECF1;
+    font-weight: 500;
+    font-size: 75px;
+    margin-bottom: -20px;
+}
+
+.sobre-mim p {
+    color: #B0B8C5;
+    font-size: 25px;
+}
+
+.sobre-mim h2 {
+    color: #dbe0e9;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: -20px;
+}
+
+.alturah2 {
+    margin-top: -20px;
+}
+
+.navbar a:hover,
+.navbar a.sobre {
+    color: #1346b6;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card {
+    width: 425px;
+    background-color: #596686;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-conteudo {
+    padding: 16px;
+    font-size: 25px;
+    color: #E8ECF1;
+}
+
+.card-conteudo h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.btn {
+    display: inline block;
+    background-color: #4a556d;
+    padding: 8px 16px;
+    color: #E8ECF1;
+    border-radius: 4px;
+
+}
+
+.navbar a:hover,
+.navbar a.projetos {
+    color: #1346b6;
+}
+
+@media(max-width: 769px) {
+
+    .topo {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    header {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    a {
+        margin-right: 0px;
+        padding-right: 50px;
+    }
+
+    main img {
+        max-width: 100px;
+    }
+
+    .img-principal {
+        text-align: center;
+    }
+
+    .corpo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-principal {
+        text-align: center;
+    }
+
+    main h1 {
+        font-size: 42px;
+        padding-left: 0vh;
+        padding-top: 0vh;
+    }
+
+    main h2 {
+        font-size: 25px;
+        padding-left: 0vh;
+        margin-bottom: 15px;
+    }
+}
+
+footer {
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
