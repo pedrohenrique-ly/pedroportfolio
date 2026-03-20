@@ -168,7 +168,6 @@ main img {
     width: 425px;
     background-color: #596686;
     border-radius: 16px;
-    overflow: hidden;
     margin: 20px;
     box-shadow: rgba(0, 0, 0, 0.2);
 }
