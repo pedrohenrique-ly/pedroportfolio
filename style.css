@@ -35,9 +35,6 @@ ul {
 
 a {
     text-decoration: none;
-    margin-right: 15px;
-    padding-top: 16px;
-    font-size: 20px;
 }
 
 .corpo {
@@ -89,13 +86,21 @@ main img {
 }
 
 .navbar a {
-    transition: 1.5s;
+    margin-right: 15px;
+    padding-top: 16px;
+    font-size: 20px;
     color: #5DADE2;
+    box-shadow: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: color 1.2s, transform 1.2s ease;
+    
 }
 
-.navbar a:hover,
+.navbar a :hover,
 .navbar a.principal {
-    color: #1346b6;
+    color: #FFE6B3;
+
 }
 
 @keyframes brilho {
@@ -154,7 +159,7 @@ main img {
 
 .navbar a:hover,
 .navbar a.sobre {
-    color: #1346b6;
+    color: #FFE6B3;
 }
 
 .card-container {
@@ -199,8 +204,55 @@ main img {
 
 .navbar a:hover,
 .navbar a.projetos {
-    color: #1346b6;
+    color: #FFE6B3;
 }
+
+.card-container-news{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card-news{
+    width: 525px;
+    background-color: #9BB0E0;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: #B0B8C5;
+}
+
+.card-news img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-conteudo-news{
+    padding: 16px;
+    font-size: 25px;
+    color: #E8ECF1;
+}
+
+.card-conteudo-news h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.card-container-news .btn{
+    display: inline block;
+    background-color: #647db4;
+    padding: 8px 16px;
+    color: #E8ECF1;
+    border-radius: 4px;
+    transform: translateY(-5px);
+}
+
+.navbar a:hover,
+.navbar a.novidades {
+    color: #FFE6B3;
+}
+
 
 @media(max-width: 769px) {
 
@@ -259,6 +311,19 @@ main img {
         padding-left: 0vh;
         margin-bottom: 15px;
     }
+
+    .sobre-mim h1{
+        font-size: 40px;
+    }
+
+    .card-conteudo {
+        font-size: 16px;
+    }
+
+    .card-conteudo h3{
+        font-size: 16px;
+    }
+
 }
 
 footer {
