@@ -7,7 +7,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow: hidden;
 }
 
 .topo {
@@ -90,7 +89,7 @@ main img {
 }
 
 .navbar a {
-    transition: 0.8s;
+    transition: 1.5s;
     color: #5DADE2;
 }
 
