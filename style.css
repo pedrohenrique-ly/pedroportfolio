@@ -1,3 +1,4 @@
+
 body {
     font-family: Montserrat, sans-serif;
     background: linear-gradient(235deg, #46526e, #5b6f9e, #1c2e55);
@@ -6,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .topo {
@@ -24,6 +26,7 @@ header {
 
 nav {
     background: transparent;
+    outline: none;
 }
 
 ul {
@@ -58,8 +61,8 @@ main {
 
 main h1 {
     font-size: 75px;
-    padding-left: 20vh;
-    padding-top: 10vh;
+    padding-left: 40px;
+    padding-top: 40px;
     font-weight: 500;
     color: #E8ECF1;
     text-shadow:
@@ -69,7 +72,7 @@ main h1 {
 
 main h2 {
     font-size: 45px;
-    padding-left: 17vh;
+    padding-left: 30px;
     font-weight: 600;
     animation: brilho 1.6s ease-in-out infinite alternate;
     color: #dbe0e9;
