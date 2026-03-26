@@ -253,7 +253,88 @@ main img {
     color: #FFE6B3;
 }
 
+form {
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
 
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+
+    padding: 30px;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition: 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-5px);
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #B0B8C5;
+}
+
+form input,
+form textarea {
+    margin-top: 5px;
+    padding: 10px;
+
+    border-radius: 8px;
+    border: 1px solid #4a556d;
+
+    background: rgba(0, 0, 0, 0.2);
+    color: #E8ECF1;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #5DADE2;
+    box-shadow: 0 0 8px rgba(93, 173, 226, 0.5);
+}
+
+form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+
+    background: #5DADE2;
+    color: #0c0c0c;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #85C1E9;
+    transform: translateY(-2px);
+}
+
+.insta a{
+    display: flex;
+    justify-content: center;
+    color: #FFE6B3;
+   
+
+}
+
+.navbar a:hover,
+.navbar a.contato {
+    color: #FFE6B3;
+}
 @media(max-width: 769px) {
 
     .topo {
@@ -324,7 +405,21 @@ main img {
         font-size: 16px;
     }
 
+        form {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    form label {
+        font-size: 14px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 14px;
+    }
 }
+
 
 footer {
     color: white;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
@@ -19,14 +19,28 @@
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="novidades.html">Novidades</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="contato.html" class="contato">Contato</a></li>
             </ul>
         </nav>
     </div>
-  
-    <footer>
-        <p>&copy; 2026 Pedro Henrique. Todos os direitos reservados</p>
-    </footer>
+    <form action="https://formspree.io/f/xwvwpela" method="POST">
+        <label>
+            Seu email:
+            <input type="email" name="email">
+        </label>
+        <label>
+            Sua mensagem:
+            <textarea name="message"></textarea>
+        </label>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="insta">
+        <a href="https://www.instagram.com/eupe___/" target="_blank">Instagram</a>
+    </div>
+        <footer>
+            <p>&copy; 2026 Pedro Henrique. Todos os direitos reservados</p>
+        </footer>
 
 </body>
 
